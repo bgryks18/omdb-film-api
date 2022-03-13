@@ -170,7 +170,7 @@ $dark_green: #358d24;
         list-style-type: none;
         a {
           @include responsiveText(1rem);
-          color: #171717;
+          color: $black;
         }
       }
     }
