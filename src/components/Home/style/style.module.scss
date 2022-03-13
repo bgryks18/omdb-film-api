@@ -1,0 +1,178 @@
+//colors
+$white: #eee;
+$background: #ddd;
+$black: #171717;
+$gray: #cccccc;
+$dark_gray: #6e6e6e;
+$blue: #4563b6;
+$red: #e21b1b;
+$green: #50b83c;
+$dark_green: #358d24;
+
+// responsiveHeadingText
+@mixin responsiveHeadingText($fontSize) {
+  font-size: $fontSize;
+  @media screen and (max-width: 992px) {
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 525px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 458px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 1rem;
+  }
+}
+// responsiveText
+@mixin responsiveText($fontSize) {
+  font-size: $fontSize;
+  @media screen and (max-width: 992px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 525px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 458px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 0.8rem;
+  }
+}
+//responsiveScreen
+@mixin responsiveScreen($minWidth) {
+  min-width: $minWidth;
+  @media screen and (max-width: 640px) {
+    min-width: 375px;
+  }
+  @media screen and (max-width: 440px) {
+    min-width: 250px;
+  }
+  @media screen and (max-width: 370px) {
+    min-width: 120px;
+  }
+}
+.movieSearchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.movieSearchArea {
+  background-color: transparent;
+  padding: 8px;
+
+  .movieSearchHeader {
+    h1 {
+      @include responsiveHeadingText(2.5rem);
+    }
+    p {
+      @include responsiveText(1.3rem);
+    }
+  }
+  .movieSearchForm {
+    background-color: $white;
+    padding: 1.5rem 2rem;
+    transition: all 0.4s;
+    border: 2px solid $gray;
+    border-radius: 9px;
+    margin: 10px auto;
+    @include responsiveScreen(521px);
+    label {
+      cursor: pointer;
+      color: $black;
+      @include responsiveText(1.3rem);
+    }
+    .searchQuery {
+      div {
+        position: relative;
+        i {
+          position: absolute;
+          top: 50%;
+          color: $dark_gray;
+          transform: translate(50%, -50%);
+          background-color: transparent;
+        }
+        input {
+          border-radius: 0;
+          padding-left: 1.7rem;
+          color: $black;
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      button.formSubmit {
+        background-color: $green;
+        color: $white;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px $dark_gray;
+        border-radius: 30px;
+        &:hover {
+          background-color: $dark_green;
+        }
+        &:focus {
+          background-color: $dark_green;
+        }
+        padding: 6px 12px;
+        margin: 0 2px;
+        @include responsiveText(1.2rem);
+      }
+      button.formClear {
+        background-color: $white;
+        color: $green;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px $white;
+        border-radius: 30px;
+        &:hover {
+          background-color: $green;
+          color: $white;
+          text-shadow: 1px 1px 2px $dark_gray;
+        }
+        &:active {
+          background-color: $dark_green;
+          color: $white;
+          text-shadow: 1px 1px 2px $dark_gray;
+        }
+        padding: 6px 12px;
+        margin: 0 2px;
+        @include responsiveText(1.2rem);
+      }
+    }
+  }
+  .movieSearchResults {
+    padding: 1.5rem 2rem;
+    min-width: 521px;
+    transition: all 0.4s;
+    border: 2px solid $gray;
+    border-radius: 9px;
+    margin: 10px auto;
+    margin-top: 0;
+    @include responsiveScreen(521px);
+    h4 {
+      font-weight: bold;
+      @include responsiveHeadingText(1.4rem);
+    }
+    p {
+      @include responsiveText(1rem);
+    }
+    ul {
+      li {
+        list-style-type: none;
+        a {
+          @include responsiveText(1rem);
+          color: #171717;
+        }
+      }
+    }
+  }
+}
