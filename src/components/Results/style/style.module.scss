@@ -81,12 +81,13 @@ $dark_green: #358d24;
 .movieSearchResults {
   padding: 1.5rem 2rem;
   min-width: 521px;
-  transition: all 0.4s;
   border: 2px solid $gray;
   border-radius: 9px;
   margin: 10px auto;
   margin-top: 0;
   @include responsiveScreen(521px);
+  opacity: 0;
+  animation: show_box 1s forwards;
 
   &.hidden {
     opacity: 0;
@@ -112,22 +113,22 @@ $dark_green: #358d24;
     @include responsiveText(1rem);
   }
   .movieResultListGroup {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
-    .movieResultList {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      li {
-        list-style-type: none;
-        a {
-          margin: 1px;
-          color: $blue;
-          @include responsiveText(1rem);
-        }
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 8px;
+    div {
+      padding: 0;
+      a {
+        color: $blue;
+        @include responsiveText(1rem);
       }
     }
+  }
+}
+@keyframes show_box {
+  to {
+    opacity: 1;
   }
 }

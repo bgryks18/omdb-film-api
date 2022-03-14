@@ -1,12 +1,13 @@
 .movieSearchResults {
   padding: 1.5rem 2rem;
   min-width: 521px;
-  transition: all 0.4s;
   border: 2px solid #cccccc;
   border-radius: 9px;
   margin: 10px auto;
   margin-top: 0;
   min-width: 521px;
+  opacity: 0;
+  animation: show_box 1s forwards;
 }
 
 @media screen and (max-width: 640px) {
@@ -177,54 +178,54 @@
 }
 
 .movieSearchResults .movieResultListGroup {
-  display: flex;
-  justify-content: flex-start;
-  margin: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 8px;
+}
+
+.movieSearchResults .movieResultListGroup div {
   padding: 0;
 }
 
-.movieSearchResults .movieResultListGroup .movieResultList {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.movieSearchResults .movieResultListGroup .movieResultList li {
-  list-style-type: none;
-}
-
-.movieSearchResults .movieResultListGroup .movieResultList li a {
-  margin: 1px;
+.movieSearchResults .movieResultListGroup div a {
   color: #4563b6;
   font-size: 1rem;
 }
 
 @media screen and (max-width: 992px) {
-  .movieSearchResults .movieResultListGroup .movieResultList li a {
+  .movieSearchResults .movieResultListGroup div a {
     font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .movieSearchResults .movieResultListGroup .movieResultList li a {
+  .movieSearchResults .movieResultListGroup div a {
     font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 525px) {
-  .movieSearchResults .movieResultListGroup .movieResultList li a {
+  .movieSearchResults .movieResultListGroup div a {
     font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 458px) {
-  .movieSearchResults .movieResultListGroup .movieResultList li a {
+  .movieSearchResults .movieResultListGroup div a {
     font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .movieSearchResults .movieResultListGroup .movieResultList li a {
+  .movieSearchResults .movieResultListGroup div a {
     font-size: 0.6rem;
+  }
+}
+
+@keyframes show_box {
+  to {
+    opacity: 1;
   }
 }
