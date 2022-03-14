@@ -86,6 +86,9 @@ $dark_green: #358d24;
   min-height: 100vh;
   opacity: 0;
   animation: show_box 1s forwards;
+  @include responsiveScreen(521px);
+  max-width: 521px;
+  margin: auto;
 }
 .movieSearchArea {
   background-color: transparent;

@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Style from './style/style.module.css'
 import Results from '../Results'
+import { useDispatch, useSelector } from 'react-redux'
+import { searchMovies } from '../../actions/MovieActions'
 const Home = () => {
+  const [keyword, setKeyword] = useState('')
+  const [post, setPost] = useState(false)
+  const dispatch = useDispatch()
+  const states = useSelector((state) => state.MovieState)
   const handleSubmit = (e) => {
     e.preventDefault()
+    dispatch(searchMovies(keyword))
+    setKeyword('')
   }
+  useEffect(() => {
+    console.log(states)
+  }, [states])
   return (
     <div className={`container-fluid`}>
       <div className={`${Style.movieSearchContainer}`}>
@@ -27,6 +38,8 @@ const Home = () => {
                     type="text"
                     className="form-control"
                     id="searchQuery"
+                    value={keyword}
+                    onChange={(e) => setKeyword(e.target.value)}
                   />
                 </div>
               </div>
@@ -40,7 +53,14 @@ const Home = () => {
               </div>
             </form>
           </div>
-          <Results />
+          {states.loading === true && (
+            <div className="d-flex justify-content-center">
+              <div className="spinner-border" role="status">
+                <span className="sr-only">Loading...</span>
+              </div>
+            </div>
+          )}
+          {states.loading === false && <Results />}
         </div>
       </div>
     </div>
