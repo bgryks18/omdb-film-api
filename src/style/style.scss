@@ -2,11 +2,12 @@
 $white: #eee;
 $background: #ddd;
 $black: #171717;
-$gray: #665;
-$dark_gray: #635d5d;
+$gray: #cccccc;
+$dark_gray: #6e6e6e;
 $blue: #4563b6;
 $red: #e21b1b;
 $green: #50b83c;
+$dark_green: #358d24;
 
 * {
   padding: 0;
@@ -16,4 +17,23 @@ $green: #50b83c;
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: $background;
+}
+.errorBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  a {
+    color: $blue;
+  }
+}
+.toBack {
+  background: $green;
+  color: $white;
+  text-shadow: 1px 1px 2px $black;
+  border-radius: 30px;
+  &:hover {
+    color: $white;
+    background-color: $dark_green;
+  }
 }

@@ -1,0 +1,50 @@
+.movieSearchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  opacity: 0;
+  animation: show_box 1s forwards;
+  min-width: 700px;
+  max-width: 700px;
+  margin: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .movieSearchContainer {
+    min-width: 375px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .movieSearchContainer {
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .movieSearchContainer {
+    min-width: 120px;
+  }
+}
+
+.movieSearchArea {
+  background-color: transparent;
+  padding: 8px;
+}
+
+.movieSearchArea .movieSearchHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movieSearchArea .movieSearchHeader div {
+  margin: 0 9px;
+}
+
+@keyframes show_box {
+  to {
+    opacity: 1;
+  }
+}
