@@ -7,7 +7,6 @@ export const searchMovies = (keyword) => async (dispatch) => {
   dispatch({ type: 'SET_LOADING' })
   try {
     const res = await ax.get(`${url}s=${keyword}`)
-    console.log(res.data)
     dispatch({
       type: 'SEARCH',
       payload: {

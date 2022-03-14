@@ -9,7 +9,6 @@ const Movie = () => {
   const states = useSelector((state) => state.MovieState)
   const movie = states.movies.find((movie) => movie.imdbID === id)
   if (!movie) return <PageNotFound />
-  console.log(movie)
   const handleClick = () => {
     navigate(`/`)
   }
@@ -18,10 +17,10 @@ const Movie = () => {
       <div className={`${Style.movieSearchContainer}`}>
         <div className={`${Style.movieSearchArea}`}>
           <button className="btn toBack m-1" onClick={handleClick}>
-            <i class="fa-solid fa-arrow-left-long"></i>
+            <i className="fa-solid fa-arrow-left-long"></i>
           </button>
           <div className={`${Style.movieSearchHeader}`}>
-            <figure class="figure">
+            <figure className="figure">
               <img
                 src={`${movie.Poster}`}
                 className="figure-img img-fluid rounded"
