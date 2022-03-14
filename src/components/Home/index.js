@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Style from './style/style.module.css'
 import Results from '../Results'
 import { useDispatch, useSelector } from 'react-redux'
-import { searchMovies } from '../../actions/MovieActions'
+import { searchMovies, clear } from '../../actions/MovieActions'
 const Home = () => {
   const [keyword, setKeyword] = useState('')
-  const [post, setPost] = useState(false)
   const dispatch = useDispatch()
   const states = useSelector((state) => state.MovieState)
   const handleSubmit = (e) => {
@@ -13,9 +12,9 @@ const Home = () => {
     dispatch(searchMovies(keyword))
     setKeyword('')
   }
-  useEffect(() => {
-    console.log(states)
-  }, [states])
+  const handleClear = () => {
+    dispatch(clear())
+  }
   return (
     <div className={`container-fluid`}>
       <div className={`${Style.movieSearchContainer}`}>
@@ -44,7 +43,11 @@ const Home = () => {
                 </div>
               </div>
               <div className={`${Style.buttons}`}>
-                <button type="button" className={`btn ${Style.formClear}`}>
+                <button
+                  type="button"
+                  className={`btn ${Style.formClear}`}
+                  onClick={handleClear}
+                >
                   Clear
                 </button>
                 <button type="submit" className={`btn ${Style.formSubmit}`}>

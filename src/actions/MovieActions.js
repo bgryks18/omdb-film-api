@@ -20,3 +20,6 @@ export const searchMovies = (keyword) => async (dispatch) => {
     console.log('Bir hata oluştu', error)
   }
 }
+export const clear = () => (dispatch) => {
+  dispatch({ type: 'CLEAR' })
+}

@@ -6,6 +6,8 @@ let initState = {
 }
 export default (state = initState, action) => {
   switch (action.type) {
+    case 'CLEAR':
+      return initState
     case 'SET_LOADING':
       return { ...state, loading: true }
     case 'SEARCH':
