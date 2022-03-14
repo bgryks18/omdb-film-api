@@ -27,9 +27,9 @@ const Results = () => {
       {states.movies.length > maxNum && (
         <>
           <hr></hr>
-          <small>{states.movies.length - maxNum} sonuç daha</small>
+          <small>{states.movies.length - maxNum} more results</small>
           <p>
-            <a href="#">Tümünü gör</a>
+            <Link to={`/search/${states.keyword}`}>View all</Link>
           </p>
         </>
       )}
