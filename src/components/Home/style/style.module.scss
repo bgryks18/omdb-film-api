@@ -80,11 +80,12 @@ $dark_green: #358d24;
   }
   .movieSearchForm {
     background-color: $white;
-    padding: 1.5rem 2rem;
+    padding: 1rem;
     transition: all 0.4s;
     border: 2px solid $gray;
     border-radius: 9px;
     margin: 10px auto;
+    min-height: 152px;
     @include responsiveScreen(521px);
     label {
       cursor: pointer;
@@ -125,7 +126,7 @@ $dark_green: #358d24;
         }
         padding: 6px 12px;
         margin: 0 2px;
-        @include responsiveText(1.2rem);
+        @include responsiveText(1rem);
       }
       button.formClear {
         background-color: $white;
@@ -145,7 +146,7 @@ $dark_green: #358d24;
         }
         padding: 6px 12px;
         margin: 0 2px;
-        @include responsiveText(1.2rem);
+        @include responsiveText(1rem);
       }
     }
   }
@@ -157,7 +158,7 @@ $dark_green: #358d24;
     border-radius: 9px;
     margin: 10px auto;
     margin-top: 0;
-    max-height: 350px;
+    max-height: 202px;
     @include responsiveScreen(521px);
     h4 {
       font-weight: bold;

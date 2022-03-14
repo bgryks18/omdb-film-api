@@ -80,11 +80,12 @@
 
 .movieSearchArea .movieSearchForm {
   background-color: #eee;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
   transition: all 0.4s;
   border: 2px solid #cccccc;
   border-radius: 9px;
   margin: 10px auto;
+  min-height: 152px;
   min-width: 521px;
 }
 
@@ -173,7 +174,7 @@
   border-radius: 30px;
   padding: 6px 12px;
   margin: 0 2px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .movieSearchArea .movieSearchForm .buttons button.formSubmit:hover {
@@ -222,7 +223,7 @@
   border-radius: 30px;
   padding: 6px 12px;
   margin: 0 2px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .movieSearchArea .movieSearchForm .buttons button.formClear:hover {
@@ -275,7 +276,7 @@
   border-radius: 9px;
   margin: 10px auto;
   margin-top: 0;
-  max-height: 350px;
+  max-height: 202px;
   min-width: 521px;
 }
 
