@@ -158,7 +158,7 @@ $dark_green: #358d24;
     border-radius: 9px;
     margin: 10px auto;
     margin-top: 0;
-    max-height: 202px;
+
     @include responsiveScreen(521px);
     h4 {
       font-weight: bold;
@@ -167,12 +167,30 @@ $dark_green: #358d24;
     p {
       @include responsiveText(1rem);
     }
-    ul {
-      li {
-        list-style-type: none;
-        a {
-          @include responsiveText(1rem);
-          color: $black;
+    span {
+      color: $black;
+      @include responsiveText(0.9rem);
+    }
+    a {
+      color: $blue;
+      @include responsiveText(1rem);
+    }
+    .movieResultListGroup {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 0;
+      .movieResultList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        li {
+          list-style-type: none;
+          a {
+            margin: 1px;
+            color: $blue;
+            @include responsiveText(1rem);
+          }
         }
       }
     }

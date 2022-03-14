@@ -276,7 +276,6 @@
   border-radius: 9px;
   margin: 10px auto;
   margin-top: 0;
-  max-height: 202px;
   min-width: 521px;
 }
 
@@ -367,41 +366,125 @@
   }
 }
 
-.movieSearchArea .movieSearchResults ul li {
-  list-style-type: none;
-}
-
-.movieSearchArea .movieSearchResults ul li a {
-  font-size: 1rem;
+.movieSearchArea .movieSearchResults span {
   color: #171717;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 992px) {
-  .movieSearchArea .movieSearchResults ul li a {
+  .movieSearchArea .movieSearchResults span {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .movieSearchArea .movieSearchResults ul li a {
+  .movieSearchArea .movieSearchResults span {
     font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width: 525px) {
-  .movieSearchArea .movieSearchResults ul li a {
+  .movieSearchArea .movieSearchResults span {
     font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 458px) {
-  .movieSearchArea .movieSearchResults ul li a {
+  .movieSearchArea .movieSearchResults span {
     font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .movieSearchArea .movieSearchResults ul li a {
+  .movieSearchArea .movieSearchResults span {
+    font-size: 0.8rem;
+  }
+}
+
+.movieSearchArea .movieSearchResults a {
+  color: #4563b6;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .movieSearchArea .movieSearchResults a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movieSearchArea .movieSearchResults a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .movieSearchArea .movieSearchResults a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .movieSearchArea .movieSearchResults a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .movieSearchArea .movieSearchResults a {
+    font-size: 0.8rem;
+  }
+}
+
+.movieSearchArea .movieSearchResults .movieResultListGroup {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li {
+  list-style-type: none;
+}
+
+.movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li a {
+  margin: 1px;
+  color: #4563b6;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li a {
     font-size: 0.8rem;
   }
 }
