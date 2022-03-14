@@ -12,7 +12,7 @@ const Movies = () => {
   console.log(states)
   console.log(keyword)
   const handleClick = () => {
-    navigate(`/`)
+    navigate(-1)
   }
   return (
     <div className={`container-fluid`}>

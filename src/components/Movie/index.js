@@ -10,7 +10,7 @@ const Movie = () => {
   const movie = states.movies.find((movie) => movie.imdbID === id)
   if (!movie) return <PageNotFound />
   const handleClick = () => {
-    navigate(`/`)
+    navigate(-1)
   }
   return (
     <div className={`container-fluid`}>
