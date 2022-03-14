@@ -157,6 +157,7 @@ $dark_green: #358d24;
     border-radius: 9px;
     margin: 10px auto;
     margin-top: 0;
+    max-height: 350px;
     @include responsiveScreen(521px);
     h4 {
       font-weight: bold;

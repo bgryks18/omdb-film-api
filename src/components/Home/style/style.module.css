@@ -275,6 +275,7 @@
   border-radius: 9px;
   margin: 10px auto;
   margin-top: 0;
+  max-height: 350px;
   min-width: 521px;
 }
 
