@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Style from './style/style.module.css'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 const Results = () => {
   const states = useSelector((state) => state.MovieState)
   let maxNum = 4
@@ -18,7 +19,7 @@ const Results = () => {
         {moviesToShow.map((movie) => {
           return (
             <div key={movie.imdbID}>
-              <a href="">{movie.Title}</a>
+              <Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link>
             </div>
           )
         })}
