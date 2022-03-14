@@ -20,14 +20,16 @@ const Movie = () => {
             <i className="fa-solid fa-arrow-left-long"></i>
           </button>
           <div className={`${Style.movieSearchHeader}`}>
-            <figure className="figure">
-              <img
-                src={`${movie.Poster}`}
-                className="figure-img img-fluid rounded"
-                alt="..."
-              />
-              <figcaption className="figure-caption">{movie.Year}</figcaption>
-            </figure>
+            {movie.Poster !== 'N/A' && (
+              <figure className="figure">
+                <img
+                  src={`${movie.Poster}`}
+                  className="figure-img img-fluid rounded"
+                  alt="..."
+                />
+                <figcaption className="figure-caption">{movie.Year}</figcaption>
+              </figure>
+            )}
             <div>
               <h1>{movie.Title}</h1>
               <p>
