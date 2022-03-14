@@ -50,31 +50,31 @@
 
 @media screen and (max-width: 992px) {
   .movieSearchArea .movieSearchHeader p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchHeader p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchHeader p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchHeader p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchHeader p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -115,31 +115,31 @@
 
 @media screen and (max-width: 992px) {
   .movieSearchArea .movieSearchForm label {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchForm label {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchForm label {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchForm label {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchForm label {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -172,7 +172,7 @@
   font-weight: bold;
   text-shadow: 1px 1px 2px #6e6e6e;
   border-radius: 30px;
-  padding: 6px 12px;
+  padding: 8px 10px;
   margin: 0 2px;
   font-size: 1rem;
 }
@@ -187,31 +187,61 @@
 
 @media screen and (max-width: 992px) {
   .movieSearchArea .movieSearchForm .buttons button.formSubmit {
-    font-size: 1.2rem;
+    padding: 6px 9px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchForm .buttons button.formSubmit {
-    font-size: 1.1rem;
+    padding: 5px 7px;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchForm .buttons button.formSubmit {
-    font-size: 1rem;
+    padding: 5px 6px;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchForm .buttons button.formSubmit {
-    font-size: 0.9rem;
+    padding: 5px 6px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchForm .buttons button.formSubmit {
+    padding: 4px 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .movieSearchArea .movieSearchForm .buttons button.formSubmit {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movieSearchArea .movieSearchForm .buttons button.formSubmit {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .movieSearchArea .movieSearchForm .buttons button.formSubmit {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .movieSearchArea .movieSearchForm .buttons button.formSubmit {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .movieSearchArea .movieSearchForm .buttons button.formSubmit {
+    font-size: 0.6rem;
   }
 }
 
@@ -221,7 +251,7 @@
   font-weight: bold;
   text-shadow: 1px 1px 2px #eee;
   border-radius: 30px;
-  padding: 6px 12px;
+  padding: 8px 10px;
   margin: 0 2px;
   font-size: 1rem;
 }
@@ -240,31 +270,61 @@
 
 @media screen and (max-width: 992px) {
   .movieSearchArea .movieSearchForm .buttons button.formClear {
-    font-size: 1.2rem;
+    padding: 6px 9px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchForm .buttons button.formClear {
-    font-size: 1.1rem;
+    padding: 5px 7px;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchForm .buttons button.formClear {
-    font-size: 1rem;
+    padding: 5px 6px;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchForm .buttons button.formClear {
-    font-size: 0.9rem;
+    padding: 5px 6px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchForm .buttons button.formClear {
+    padding: 4px 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .movieSearchArea .movieSearchForm .buttons button.formClear {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movieSearchArea .movieSearchForm .buttons button.formClear {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .movieSearchArea .movieSearchForm .buttons button.formClear {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .movieSearchArea .movieSearchForm .buttons button.formClear {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .movieSearchArea .movieSearchForm .buttons button.formClear {
+    font-size: 0.6rem;
   }
 }
 
@@ -338,31 +398,31 @@
 
 @media screen and (max-width: 992px) {
   .movieSearchArea .movieSearchResults p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchResults p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchResults p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchResults p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchResults p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -373,31 +433,31 @@
 
 @media screen and (max-width: 992px) {
   .movieSearchArea .movieSearchResults span {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchResults span {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchResults span {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchResults span {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchResults span {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -408,31 +468,31 @@
 
 @media screen and (max-width: 992px) {
   .movieSearchArea .movieSearchResults a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchResults a {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchResults a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchResults a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchResults a {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -461,30 +521,30 @@
 
 @media screen and (max-width: 992px) {
   .movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li a {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchResults .movieResultListGroup .movieResultList li a {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
