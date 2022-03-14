@@ -84,6 +84,8 @@ $dark_green: #358d24;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  opacity: 0;
+  animation: show_box 1s forwards;
 }
 .movieSearchArea {
   background-color: transparent;
@@ -125,6 +127,7 @@ $dark_green: #358d24;
           border-radius: 0;
           padding-left: 1.7rem;
           color: $black;
+          @include responsiveText(1rem);
         }
       }
     }
@@ -177,8 +180,16 @@ $dark_green: #358d24;
     border-radius: 9px;
     margin: 10px auto;
     margin-top: 0;
-
     @include responsiveScreen(521px);
+
+    &.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+    }
     h4 {
       font-weight: bold;
       @include responsiveHeadingText(1.4rem);
@@ -213,5 +224,10 @@ $dark_green: #358d24;
         }
       }
     }
+  }
+}
+@keyframes show_box {
+  to {
+    opacity: 1;
   }
 }

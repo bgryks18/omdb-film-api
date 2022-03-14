@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Style from './style/style.module.css'
 const index = () => {
+  const [show, setShow] = useState(false)
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setShow(!show)
+  }
   console.log(Style)
   return (
     <div className={`container-fluid`}>
@@ -13,7 +18,7 @@ const index = () => {
             </p>
           </div>
           <div className={`${Style.movieSearchForm}`}>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className={`form-group ${Style.searchQuery}`}>
                 <label htmlFor="searchQuery">
                   <b>Movie Title</b>
@@ -37,7 +42,11 @@ const index = () => {
               </div>
             </form>
           </div>
-          <div className={`${Style.movieSearchResults}`}>
+          <div
+            className={`${Style.movieSearchResults} ${
+              show ? Style.visible : Style.hidden
+            }`}
+          >
             <h4>Results for "search"</h4>
             <p>top on a movie title to learn more about it</p>
             <div className={`${Style.movieResultListGroup}`}>
