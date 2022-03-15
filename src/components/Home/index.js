@@ -18,6 +18,7 @@ const Home = () => {
     setKeyword('')
   }
   const handleClear = () => {
+    setKeyword('')
     dispatch(clear())
   }
   return (
