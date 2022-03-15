@@ -1,7 +1,7 @@
 import ax from 'axios'
 
 const API_KEY = '3c78c5ff'
-const url = `http://www.omdbapi.com/?apikey=${API_KEY}&`
+const url = `https://www.omdbapi.com/?apikey=${API_KEY}&`
 
 export const searchMovies = (keyword) => async (dispatch) => {
   dispatch({ type: 'SET_LOADING' })
