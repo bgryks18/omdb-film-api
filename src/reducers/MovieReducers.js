@@ -10,6 +10,8 @@ export default (state = initState, action) => {
       return initState
     case 'SET_LOADING':
       return { ...state, loading: true }
+    case 'SET_UNLOADING':
+      return { ...state, loading: false }
     case 'SEARCH':
       return {
         ...state,

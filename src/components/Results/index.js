@@ -12,28 +12,34 @@ const Results = () => {
     moviesToShow = states.movies
   }
   return (
-    <div className={`${Style.movieSearchResults}`}>
-      <h4>Results for "{states.keyword}"</h4>
-      <p>top on a movie title to learn more about it</p>
-      <div className={`${Style.movieResultListGroup}`}>
-        {moviesToShow.map((movie) => {
-          return (
-            <div key={movie.imdbID}>
-              <Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link>
-            </div>
-          )
-        })}
-      </div>
-      {states.movies.length > maxNum && (
-        <>
-          <hr></hr>
-          <small>{states.movies.length - maxNum} more results</small>
-          <p>
-            <Link to={`/search/${states.keyword}`}>View all</Link>
-          </p>
-        </>
+    <>
+      {states.movies.length > 0 ? (
+        <div className={`${Style.movieSearchResults}`}>
+          <h4>Results for "{states.keyword}"</h4>
+          <p>top on a movie title to learn more about it</p>
+          <div className={`${Style.movieResultListGroup}`}>
+            {moviesToShow.map((movie) => {
+              return (
+                <div key={movie.imdbID}>
+                  <Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link>
+                </div>
+              )
+            })}
+          </div>
+          {states.movies.length > maxNum && (
+            <>
+              <hr></hr>
+              <small>{states.movies.length - maxNum} more results</small>
+              <p>
+                <Link to={`/search/${states.keyword}`}>View all</Link>
+              </p>
+            </>
+          )}
+        </div>
+      ) : (
+        'No result'
       )}
-    </div>
+    </>
   )
 }
 
