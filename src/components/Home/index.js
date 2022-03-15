@@ -12,6 +12,7 @@ const Home = () => {
     if (keyword.length < 3) {
       alert('Please fill the textbox as least 3 characters')
     } else {
+      dispatch(clear())
       dispatch(searchMovies(keyword))
     }
     setKeyword('')
