@@ -17,10 +17,10 @@ const Results = () => {
         <div className={`${Style.movieSearchResults}`}>
           <h4>Results for "{states.keyword}"</h4>
           <p>top on a movie title to learn more about it</p>
-          <div className={`${Style.movieResultListGroup}`}>
+          <div className="row">
             {moviesToShow.map((movie) => {
               return (
-                <div key={movie.imdbID}>
+                <div key={movie.imdbID} className="col-12">
                   <Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link>
                 </div>
               )

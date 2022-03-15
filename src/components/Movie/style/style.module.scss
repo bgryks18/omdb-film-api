@@ -13,38 +13,37 @@ $dark_green: #358d24;
 @mixin responsiveHeadingText($fontSize) {
   font-size: $fontSize;
   @media screen and (max-width: 992px) {
-    font-size: 1.3rem;
+    font-size: $fontSize;
   }
   @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   @media screen and (max-width: 525px) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   @media screen and (max-width: 458px) {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   @media screen and (max-width: 375px) {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
-// responsiveText
 @mixin responsiveText($fontSize) {
   font-size: $fontSize;
   @media screen and (max-width: 992px) {
-    font-size: 1rem;
+    font-size: $fontSize;
   }
   @media screen and (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
   @media screen and (max-width: 525px) {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   @media screen and (max-width: 458px) {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   @media screen and (max-width: 375px) {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 //responsiveScreen
@@ -83,7 +82,7 @@ $dark_green: #358d24;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vh;
   opacity: 0;
   animation: show_box 1s forwards;
   @include responsiveScreen(700px);
@@ -100,6 +99,13 @@ $dark_green: #358d24;
     justify-content: space-around;
     div {
       margin: 0 9px;
+      h1 {
+        @include responsiveHeadingText(2.5rem);
+      }
+      a {
+        color: $blue;
+        @include responsiveText(1rem);
+      }
     }
   }
 }

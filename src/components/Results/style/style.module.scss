@@ -8,42 +8,42 @@ $blue: #4563b6;
 $red: #e21b1b;
 $green: #50b83c;
 $dark_green: #358d24;
+
 // responsiveHeadingText
 @mixin responsiveHeadingText($fontSize) {
   font-size: $fontSize;
   @media screen and (max-width: 992px) {
-    font-size: 1.3rem;
+    font-size: $fontSize;
   }
   @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   @media screen and (max-width: 525px) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   @media screen and (max-width: 458px) {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   @media screen and (max-width: 375px) {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
-// responsiveText
 @mixin responsiveText($fontSize) {
   font-size: $fontSize;
   @media screen and (max-width: 992px) {
-    font-size: 1rem;
+    font-size: $fontSize;
   }
   @media screen and (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
   @media screen and (max-width: 525px) {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   @media screen and (max-width: 458px) {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   @media screen and (max-width: 375px) {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 //responsiveScreen
@@ -80,7 +80,6 @@ $dark_green: #358d24;
 }
 .movieSearchResults {
   padding: 1.5rem 2rem;
-  min-width: 521px;
   border: 2px solid $gray;
   border-radius: 9px;
   margin: 10px auto;
@@ -111,20 +110,6 @@ $dark_green: #358d24;
   a {
     color: $blue;
     @include responsiveText(1rem);
-  }
-  .movieResultListGroup {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    gap: 8px;
-    div {
-      padding: 0;
-      a {
-        color: $blue;
-        @include responsiveText(1rem);
-      }
-    }
   }
 }
 @keyframes show_box {

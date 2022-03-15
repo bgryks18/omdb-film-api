@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vh;
   opacity: 0;
   animation: show_box 1s forwards;
   min-width: 700px;
@@ -41,6 +41,75 @@
 
 .movieSearchArea .movieSearchHeader div {
   margin: 0 9px;
+}
+
+.movieSearchArea .movieSearchHeader div h1 {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .movieSearchArea .movieSearchHeader div h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movieSearchArea .movieSearchHeader div h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .movieSearchArea .movieSearchHeader div h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .movieSearchArea .movieSearchHeader div h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .movieSearchArea .movieSearchHeader div h1 {
+    font-size: 1.3rem;
+  }
+}
+
+.movieSearchArea .movieSearchHeader div a {
+  color: #4563b6;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .movieSearchArea .movieSearchHeader div a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movieSearchArea .movieSearchHeader div a {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .movieSearchArea .movieSearchHeader div a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .movieSearchArea .movieSearchHeader div a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .movieSearchArea .movieSearchHeader div a {
+    font-size: 0.8rem;
+  }
 }
 
 @keyframes show_box {

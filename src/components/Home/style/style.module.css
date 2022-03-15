@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vh;
   opacity: 0;
   animation: show_box 1s forwards;
   min-width: 521px;
@@ -39,31 +39,31 @@
 
 @media screen and (max-width: 992px) {
   .movieSearchArea .movieSearchHeader h1 {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchHeader h1 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchHeader h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchHeader h1 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchHeader h1 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -73,31 +73,31 @@
 
 @media screen and (max-width: 992px) {
   .movieSearchArea .movieSearchHeader p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchHeader p {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchHeader p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchHeader p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchHeader p {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -138,31 +138,31 @@
 
 @media screen and (max-width: 992px) {
   .movieSearchArea .movieSearchForm label {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchForm label {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchForm label {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchForm label {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchForm label {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -193,25 +193,25 @@
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchForm .searchQuery div input {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchForm .searchQuery div input {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchForm .searchQuery div input {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchForm .searchQuery div input {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -277,25 +277,25 @@
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchForm .buttons button.formSubmit {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchForm .buttons button.formSubmit {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchForm .buttons button.formSubmit {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchForm .buttons button.formSubmit {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -360,25 +360,25 @@
 
 @media screen and (max-width: 768px) {
   .movieSearchArea .movieSearchForm .buttons button.formClear {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width: 525px) {
   .movieSearchArea .movieSearchForm .buttons button.formClear {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 458px) {
   .movieSearchArea .movieSearchForm .buttons button.formClear {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .movieSearchArea .movieSearchForm .buttons button.formClear {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
