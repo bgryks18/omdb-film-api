@@ -9,8 +9,6 @@ const Movies = () => {
   const states = useSelector((state) => state.MovieState)
   if (states.movies.length < 1) return <PageNotFound />
   if (states.keyword !== keyword) return <PageNotFound />
-  console.log(states)
-  console.log(keyword)
   const handleClick = () => {
     navigate(-1)
   }
