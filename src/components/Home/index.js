@@ -9,7 +9,11 @@ const Home = () => {
   const states = useSelector((state) => state.MovieState)
   const handleSubmit = (e) => {
     e.preventDefault()
-    dispatch(searchMovies(keyword))
+    if (keyword.length < 3) {
+      alert('Please fill the textbox as least 3 characters')
+    } else {
+      dispatch(searchMovies(keyword))
+    }
     setKeyword('')
   }
   const handleClear = () => {
