@@ -23,7 +23,7 @@ const Movies = () => {
           </button>
           <div className={`${Style.movieSearchHeader}`}>
             <p>
-              All result about "<b>{keyword}</b>"
+              All results about "<b>{keyword}</b>"
             </p>
             <div className={`row ${Style.listRow}`}>
               {states.movies.map((movie) => {
