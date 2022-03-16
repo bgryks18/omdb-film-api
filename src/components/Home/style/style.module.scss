@@ -178,6 +178,41 @@ $dark_green: #358d24;
       }
     }
   }
+
+  .movieSearchResults {
+    padding: 1.5rem 2rem;
+    border: 2px solid $gray;
+    border-radius: 9px;
+    margin: 10px auto;
+    margin-top: 0;
+    @include responsiveScreen(521px);
+    opacity: 0;
+    animation: show_box 1s forwards;
+  
+    &.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    h4 {
+      font-weight: bold;
+      @include responsiveHeadingText(1.4rem);
+    }
+    p {
+      @include responsiveText(1rem);
+    }
+    span {
+      color: $black;
+      @include responsiveText(0.9rem);
+    }
+    a {
+      color: $blue;
+      @include responsiveText(1rem);
+    }
+  }
 }
 @keyframes show_box {
   to {

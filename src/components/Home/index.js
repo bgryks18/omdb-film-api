@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Style from './style/style.module.css'
-import Results from '../Results'
+import Results from './Results'
 import { useDispatch, useSelector } from 'react-redux'
 import { searchMovies, clear } from '../../actions/MovieActions'
 const Home = () => {
