@@ -31,3 +31,10 @@ body {
   color: #eee;
   background-color: #358d24;
 }
+
+.loading.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
