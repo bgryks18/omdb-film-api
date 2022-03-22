@@ -1,4 +1,5 @@
 
+
 # OMDB Film Api Uygulaması
 Bu, https://www.omdbapi.com api vasıtasıyla, web sayfamızda film araması yaparak filmlere erişmemizi sağlayan mobil uyumlu bir web uygulamasıdır.
 
@@ -30,7 +31,10 @@ Aşağıdaki komut ile uygulamanın bağımlı olduğu paketlerin hepsi kurulur
   
 ## Uygulama Nasıl Çalışıyor
   https://www.omdbapi.com/?apikey=APIKEY&s=KEYWORD
-   şeklinde basit bir film araması yapmamızı sağlıyor.
+   adresine get isteği yaparak basit bir film araması yapmamızı sağlıyor.
+  Filmin detayına gidildiğinde 
+https://www.omdbapi.com/?apikey=APIKEY&i=IMDBID
+    adresine bir get isteği gönderiyor ve imdb id'sine göre film detaylarını alıyor.
    https://www.omdbapi.com üzerinden daha farklı parametreleri bulup kendi isteğinize göre kullanabilirsiniz.
 
 ## Demo
